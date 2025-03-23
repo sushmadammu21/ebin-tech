@@ -1,0 +1,97 @@
+
+/* Import Font */
+
+/* Global Styles */
+body {
+    background-color: #008970; /* Deep dark green */
+    font-family: 'Futura pt cond extrabold', sans-serif;
+    color: #d1ff91; /* Neon Green */
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.ibb.co/4gw759r8/BG-Pattern.png');
+
+}
+
+/* Container */
+.container {
+    max-width: 360px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    max-width: 260px;
+    margin-bottom: 1px;
+}
+
+.tagline {
+    font-size: 11px;
+    color: #008970;
+    margin-top: 5px;
+}
+
+/* Form Styling */
+form {
+    background-color: #008970; /* Deep green form background */
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #75d665; /* Soft green border */
+}
+
+/* Title Styling */
+.title {
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.8;}
+
+/* "CONTACT WITH" Styling */
+.title  {
+    color: #4BEE6C !important; /* Neon Green */
+    font-weight: 700;
+    display: block;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.8;
+}
+
+
+/* Paragraph Styling */
+p {
+    font-size: 13px;
+    color: #8DB495;
+    line-height: 1.6;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Success/Error Messages */
+#message {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 400px) {
+    .container {
+        padding: 15px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+}

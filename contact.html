@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://i.ibb.co/VYX7SQ0M/ebin-tech-logo-2.png" alt="Ebin Tech Logo" class="logo">
+        </header>
+
+        <!-- Form Section -->
+        <form id="form" class="container m-4 pl-4" method="POST">
+            <div class="contact-header">
+                <h1 class="title" >CONTACT WITH<br/>Ease </h1>
+                <p style="color: #8DB495;">Your inquiries, ideas, and collaboration opportunities are just a click away. Let's start the conversation.</p>
+            </div>
+            <div class="field">
+                <label class="label">Full Name</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="John Anderson" name="Name" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input class="input" type="email" placeholder="john.anderson@gmail.com" name="Email" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Phone number</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="+91 9676711060" name="Phone" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Enquiry</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="How can we help you?" name="Message" required></textarea>
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-primary submit-btn" type="submit" id="submit-button" style="background-color:#4BEE6C;color: #0e110c;
+">
+                        SEND A QUESTION
+                    </button>
+                </div>
+            </div>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+            body {
+                background-color: #020802;
+                font-family: 'Inter', sans-serif;
+                margin: 0;
+                padding: 0;
+                color: #d1ff91;
+            }
+            
+            form#form {
+                background-color: #061A18;
+                border: 1px solid #008970;
+                border-radius: 16px;
+                padding: 24px 20px;
+                max-width: 390px;
+                margin: 20px auto;
+            }
+            
+            /* Title Section */
+            .contact-header .title {
+                font-size: 30px;
+                font-weight: 700;
+                color: #4BEE6C;
+                text-transform: uppercase;
+                line-height: 1.3;
+                margin-bottom: 12px;
+            }
+            
+            .contact-header .title br {
+                display: block;
+            }
+            
+            .contact-header .title strong,
+            .contact-header .title span,
+            .contact-header .title {
+                display: block;
+                color: #E1FFC7;
+                font-weight: 900;
+            }
+            
+            .contact-header p {
+                font-size: 14px;
+                color: #E1FFC7;
+                line-height: 1.6;
+                margin-bottom: 24px;
+            }
+            
+            /* Labels */
+            .label {
+                font-size: 13px;
+                color: #F1FBE8;
+                margin-bottom: 4px;
+                display: block;
+            }
+            
+            /* Input & Textarea Fields */
+            .input,
+            .textarea {
+                width: 100%;
+                padding: 10px 12px;
+                border: 1px solid #E1FFC7;
+                border-radius: 8px;
+                background-color: transparent;
+                color: #E1FFC7;
+                font-size: 14px;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+            }
+            
+            /* Green Placeholder Styling */
+            .input::placeholder,
+            .textarea::placeholder {
+                color: #E1FFC7;
+                opacity: 0.6;
+            }
+            
+            /* Textarea Specifics */
+            .textarea {
+                height: 80px;
+                resize: none;
+            }
+            
+            /* Submit Button */
+            .submit-btn {
+                background-color: #d1ff91;
+                font-weight: 700;
+                width: 100%;
+                padding: 14px;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            
+            .submit-btn:hover {
+                background-color: #b8ff5e;
+            }
+            
+            /* Mobile Responsive */
+            @media screen and (max-width: 480px) {
+                form#form {
+                    padding: 20px 16px;
+                }
+            
+                .contact-header .title {
+                    font-size: 20px;
+                }
+            
+                .submit-btn {
+                    font-size: 14px;
+                }
+            }
+            </style>
+        </form>
+
+        <div id="message" style="display: none; margin: 20px; font-weight: bold; color: rgb(185, 178, 138); padding: 8px; background-color: rgb(161, 161, 84); border-radius: 4px; border-color: black transparent;">
+        </div>
+
+        <footer class="image-section">
+            <img src="https://i.ibb.co/GvVPkS0w/image.jpg" alt="Illustration" class="illustration">
+        <style>/* Footer Image Section */
+            .image-section {
+                text-align: center;
+                margin-top: 30px;
+            }
+            
+            .image-section .illustration {
+                max-width: 100%;
+                width: 100%;
+                max-height: 280px;
+                object-fit: cover;
+                border-radius: 12px;
+                border: 1px solid #008970;
+                box-shadow: 0 0 10px rgba(209, 255, 145, 0.3);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            
+            /* Hover effect (optional) */
+            .image-section .illustration:hover {
+                transform: scale(1.02);
+                box-shadow: 0 0 15px rgba(209, 255, 145, 0.5);
+            }
+            
+            /* Responsive tweak */
+            @media (max-width: 480px) {
+                .image-section {
+                    padding: 0 16px;
+                }
+            
+                .image-section .illustration {
+                    max-height: 220px;
+                }
+            }
+            </style>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Form Submission -->
+    <script>
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            document.getElementById("message").textContent = "Submitting..";
+            document.getElementById("message").style.display = "block";
+            document.getElementById("submit-button").disabled = true;
+
+            var formData = new FormData(this);
+            var keyValuePairs = [];
+            for (var pair of formData.entries()) {
+                keyValuePairs.push(pair[0] + "=" + pair[1]);
+            }
+            var formDataString = keyValuePairs.join("&");
+
+            fetch(
+                "https://script.google.com/macros/s/AKfycbyS8aZDvw0uOjBC3n0ROE1HHAbwelbdUcGOhhLhgiNmFE14c43cNu5WFAuBPsFzMlfz/exec",
+                {
+                    redirect: "follow",
+                    method: "POST",
+                    body: formDataString,
+                    headers: {
+                        "Content-Type": "text/plain;charset=utf-8",
+                    },
+                }
+            )
+            .then(function (response) {
+                if (response) {
+                    return response;
+                } else {
+                    throw new Error("Failed to submit the form.");
+                }
+            })
+            .then(function (data) {
+                document.getElementById("message").textContent = "Data submitted successfully!";
+                document.getElementById("message").style.display = "block";
+                document.getElementById("message").style.backgroundColor = "green";
+                document.getElementById("message").style.color = "beige";
+                document.getElementById("submit-button").disabled = false;
+                document.getElementById("form").reset();
+
+                setTimeout(function () {
+                    document.getElementById("message").textContent = "";
+                    document.getElementById("message").style.display = "none";
+                }, 2600);
+            })
+            .catch(function (error) {
+                console.error(error);
+                document.getElementById("message").textContent = "An error occurred while submitting the form.";
+                document.getElementById("message").style.display = "block";
+            });
+        });
+    </script>
+</body>
+</html>
